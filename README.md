@@ -10,3 +10,9 @@ Each version is in its own sub-folder. My notes are all marked with `NOTE(ywen)`
 
 - `3%20161105-1ubuntu3`: The version used on Ubuntu 18.04 (with patches applied). Corresponding tag: [`applied/3%2520161105-1ubuntu3`](https://git.launchpad.net/ubuntu/+source/iputils/tag/?h=applied/3%2520161105-1ubuntu3).
   - I have to replace `:` right after the epoch version with `%` (as the git tag did) because `make` doesn't seem to like `:` in the file paths. It would report "multiple target patterns" errors.
+
+## How to build
+
+- Refer to `debian/control` for the build dependencies.
+  - Note that the package `libgnutls-openssl-dev` is a virtual one that can be satisfied by installing `libgnutls28-dev`.
+- Run `make`. It takes less than 5 seconds to finish building the code.
