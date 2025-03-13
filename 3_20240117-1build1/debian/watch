@@ -1,0 +1,6 @@
+# based on https://salsa.debian.org/printing-team/cups/-/blob/debian/main/debian/watch?ref_type=heads
+version=4
+opts="searchmode=plain,\
+pgpsigurlmangle=s/$/\.asc/" \
+https://api.github.com/repos/iputils/@PACKAGE@/releases \
+https://github.com/iputils/@PACKAGE@/releases/download/?[\d.]+/@PACKAGE@-@ANY_VERSION@@ARCHIVE_EXT@
