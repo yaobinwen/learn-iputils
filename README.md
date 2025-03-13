@@ -10,6 +10,7 @@ Each version is in its own sub-folder. My notes are all marked with `NOTE(ywen)`
 
 - `3%20161105-1ubuntu3`: The version used on Ubuntu 18.04 (with patches applied). Corresponding tag: [`applied/3%2520161105-1ubuntu3`](https://git.launchpad.net/ubuntu/+source/iputils/tag/?h=applied/3%2520161105-1ubuntu3).
   - I have to replace `:` right after the epoch version with `%` (as the git tag did) because `make` doesn't seem to like `:` in the file paths. It would report "multiple target patterns" errors.
+- `3_20240117-1build1`: The version used on Ubuntu 24.04 (with patches applied). Corresponding tag: [`applied/3%20240117-1build1`](https://git.launchpad.net/ubuntu/+source/iputils/tag/?h=applied/3%2520240117-1build1).
 
 ## How to build
 
